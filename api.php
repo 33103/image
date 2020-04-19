@@ -54,7 +54,7 @@ $domain = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'];
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Hidoveimage</td>
+                            <td>image</td>
                             <td>File</td>
                             <td>是</td>
                             <td>表单名称</td>

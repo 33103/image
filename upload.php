@@ -7,17 +7,20 @@
  */
 header('content-type: application/json');
 set_time_limit(0);
-if(empty($_FILES['HidoveImage'])){
-    die(msg(400,'The HidoveImage can not be null!'));
+if(empty($_FILES['image'])){
+    die(msg(400,'The image can not be null!'));
 }else{
-    $file = $_FILES['HidoveImage'];
+    $file = $_FILES['image'];
 }
-if(empty($_POST['apitype'])){
-    die(msg(400,'The apitype can not be null!'));
+if(empty($_POST['apiType'])){
+    die(msg(400,'The apiType can not be null!'));
 }else{
-    $postData['type'] = $_POST['apitype'];
+    $postData['type'] = $_POST['apiType'];
 }
-$newFileName = $file['tmp_name'].'.'.getImageInfo($file['tmp_name'])['type'];
+$imageInfo =getImageInfo($file['tmp_name']);
+if(!$imageInfo)
+    die(msg(400,'The image is illegal!'));
+$newFileName = $file['tmp_name'].'.'.$imageInfo['type'];
 rename($file['tmp_name'],$newFileName);
 if (class_exists('CURLFile')) {     // php 5.5
     $postData['image'] = new \CURLFile(realpath($newFileName));
@@ -89,10 +92,7 @@ function getImageInfo($fileName){
                 'mime'=> $data['mime']
             ];
         default:
-            return [
-                'type'=>'Unown type',
-                'mime'=> $data['mime']
-            ];
+            return false;
     }
 }
 function msg($code,$msg,$data=[]){

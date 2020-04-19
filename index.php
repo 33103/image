@@ -31,42 +31,36 @@
         <div class="card mb-3">
             <div class="card-body">
                 <h5 class="card-title">Free</h5>
-                <div class="btn-group-toggle" data-toggle="buttons" id="apitype">
+                <div class="btn-group-toggle" data-toggle="buttons" id="apiType">
                     <label class="btn btn-outline-secondary active">
-                        <input type="checkbox" checked autocomplete="off" name="apitype" value="ali" title="阿里图床">阿里图床
-                    </label>
-                    <label class="btn btn-outline-secondary active">
-                        <input type="checkbox" checked autocomplete="off" name="apitype" value="Vim_Cn"
-                            title="Vim_Cn">Vim_Cn </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="Upload_Cc"
-                            title="Upload_Cc">Upload_Cc </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="Catbox" title="Catbox">Catbox
+                        <input type="checkbox" checked autocomplete="off" name="apiType" value="ali" title="阿里图床">阿里图床
                     </label>
                     <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="SMMS" title="SMMS">SMMS </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="SouGou" title="搜狗">搜狗 </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="xiaomi" title="小米">小米 </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="BaiDu" title="百度">百度 </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="Qihoo" title="奇虎">奇虎 </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="Jd" title="京东">京东 </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="SuNing" title="苏宁">苏宁 </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="juejin" title="掘金论坛">掘金论坛
+                        <input type="checkbox" autocomplete="off" name="apiType" value="Catbox" title="Catbox">Catbox
                     </label>
                     <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="Neteasy" title="网易">网易 </label>
+                        <input type="checkbox" autocomplete="off" name="apiType" value="SMMS" title="SMMS">SMMS </label>
                     <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="toutiao" title="头条">头条 </label>
+                        <input type="checkbox" autocomplete="off" name="apiType" value="SouGou" title="搜狗">搜狗 </label>
                     <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="niupic" title="牛图">牛图 </label>
+                        <input type="checkbox" autocomplete="off" name="apiType" value="xiaomi" title="小米">小米 </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="checkbox" autocomplete="off" name="apiType" value="BaiDu" title="百度">百度 </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="checkbox" autocomplete="off" name="apiType" value="Qihoo" title="奇虎">奇虎 </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="checkbox" autocomplete="off" name="apiType" value="Jd" title="京东">京东 </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="checkbox" autocomplete="off" name="apiType" value="SuNing" title="苏宁">苏宁 </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="checkbox" autocomplete="off" name="apiType" value="juejin" title="掘金论坛">掘金论坛
+                    </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="checkbox" autocomplete="off" name="apiType" value="Neteasy" title="网易">网易 </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="checkbox" autocomplete="off" name="apiType" value="toutiao" title="头条">头条 </label>
+                    <label class="btn btn-outline-secondary">
+                        <input type="checkbox" autocomplete="off" name="apiType" value="niupic" title="牛图">牛图 </label>
                 </div>
             </div>
         </div>
@@ -74,7 +68,7 @@
         <div class="post">
             <form enctype="multipart/form-data">
                 <div class="form-group">
-                    <input id="Hidove" type="file" name="HidoveImage" multiple="true" class="file"
+                    <input id="Hidove" type="file" name="image" multiple="true" class="file"
                         data-overwrite-initial="false" data-min-file-count="1" data-max-file-count="10"
                         accept="image/*">
                 </div>
