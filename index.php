@@ -35,12 +35,6 @@
                     <label class="btn btn-outline-secondary active">
                         <input type="checkbox" checked autocomplete="off" name="apitype" value="ali" title="阿里图床">阿里图床
                     </label>
-                    <label class="btn btn-outline-secondary active">
-                        <input type="checkbox" checked autocomplete="off" name="apitype" value="Vim_Cn"
-                            title="Vim_Cn">Vim_Cn </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="checkbox" autocomplete="off" name="apitype" value="Upload_Cc"
-                            title="Upload_Cc">Upload_Cc </label>
                     <label class="btn btn-outline-secondary">
                         <input type="checkbox" autocomplete="off" name="apitype" value="Catbox" title="Catbox">Catbox
                     </label>
@@ -74,7 +68,7 @@
         <div class="post">
             <form enctype="multipart/form-data">
                 <div class="form-group">
-                    <input id="Hidove" type="file" name="HidoveImage" multiple="true" class="file"
+                    <input id="Hidove" type="file" name="image" multiple="true" class="file"
                         data-overwrite-initial="false" data-min-file-count="1" data-max-file-count="10"
                         accept="image/*">
                 </div>
